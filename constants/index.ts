@@ -29,7 +29,7 @@ export const NAV_LINKS = [
       icon: '/map.svg',
       variant: 'green',
       description:
-        'We guarantee the best prices. If you find a lower price for the same sculpture, we will match it or offer an additional 10% off.',
+        'We guarantee all the best prices. If you find a lower price for the same sculpture, we will match it or offer an additional 10% off.',
     },
     {
       title: 'Handmade',
