@@ -1,5 +1,6 @@
 "use client";
 
+import axios from "axios";
 import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 
@@ -24,18 +25,22 @@ const Summary = () => {
     }
   }, [searchParams, removeAll]);
 
+  // Adjust totalPrice calculation to include item quantity
   const totalPrice = items.reduce((total, item) => {
-    return total + Number(item.price)
+    return total + (item.price * item.quantity); // Calculate total based on quantity
   }, 0);
 
-  const onCheckout = () => {
-    // Placeholder for checkout action, does nothing for now
-    console.log('Checkout button clicked');
-  };
+  const onCheckout = async () => {
+    const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/checkout`, {
+      productIds: items.map((item) => item.id)
+    });
 
-  return ( 
+    window.location = response.data.url;
+  }
+
+  return (
     <div
-      className="mt-16 rounded-lg bg-gray-50 px-4 py-6 sm:p-6 lg:col-span-5 lg:mt-0 lg:p-8"
+      className="mt-16 rounded-lg bg-white px-4 py-6 sm:p-6 lg:col-span-5 lg:mt-0 lg:p-8 shadow-md" // Added shadow-md for box shadow
     >
       <h2 className="text-lg font-medium text-gray-900">
         Order summary
@@ -52,5 +57,5 @@ const Summary = () => {
     </div>
   );
 }
-
+ 
 export default Summary;
