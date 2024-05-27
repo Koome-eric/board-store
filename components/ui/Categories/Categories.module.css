@@ -1,0 +1,29 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;  /* Stack the elements vertically */
+  align-items: center;  /* Center the content horizontally */
+
+  .h3 {
+    font-weight: 400;
+  }
+
+}
+
+.list {
+  display: grid;
+  gap: 30px;
+  padding: 0;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}

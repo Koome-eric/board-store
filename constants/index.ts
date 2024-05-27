@@ -1,3 +1,29 @@
+export const inclusions = [
+  {
+    title: 'Free Shipping',
+    description: 'Free shipping for order above $150',
+    icon: '/shipping.svg',
+  },
+  {
+    title: 'Money Guarantee',
+    description: 'Within 30 days for an exchange',
+    icon: '/dollar.svg',
+  },
+  {
+    title: 'Online Support',
+    description: '24 hours a day, 7 days a week',
+    icon: '/support.svg',
+  },
+  {
+    title: 'Flexible Payment',
+    description: 'Pay with multiple credit cards',
+    icon: '/payment.svg',
+  },
+]
+
+export const noHeaderFooterUrls = ['/create-account', '/login', '/recover-password']
+
+
 // NAVIGATION
 export const NAV_LINKS = [
     { href: '/', key: 'home', label: 'Home' },

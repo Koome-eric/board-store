@@ -17,7 +17,7 @@ const Navbar = async () => {
             <MainNav data={categories} />
           </div>
           <Link href="/" className="flex justify-center flex-1">
-            <Image src='/logo.svg' alt='logo' width={140} height={140} />
+            <Image src='/logo.svg' alt='logo' width={200} height={160} />
           </Link>
           <div className="flex-1 flex justify-end">
             <NavbarActions />

@@ -64,6 +64,9 @@ textarea {
   .flexCenter {
     @apply flex items-center justify-center;
   }
+  .flexCenter1 {
+    @apply flex items-center justify-center space-x-4;
+  }
   .flexBetween {
     @apply flex items-center justify-between;
   }

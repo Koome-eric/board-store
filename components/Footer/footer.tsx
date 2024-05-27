@@ -2,10 +2,14 @@ import { FOOTER_CONTACT_INFO, FOOTER_LINKS, SOCIALS } from '@/constants';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import FooterComponent from './FooterComponent/footercomponent';
 
 const Footer = () => {
+  
   return (
-    <footer className="flexCenter mb-16 bg-custom-pink pt-11">
+    <footer>
+    <FooterComponent /> {/* Include FooterComponent above the current footer */}
+    <div className="flexCenter mb-16 bg-custom-pink pt-11">
       <div className="padding-container max-container flex w-full flex-col gap-14">
         <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
           <Link href="/" passHref>
@@ -61,6 +65,7 @@ const Footer = () => {
 
         <div className="border bg-gray-20" />
         <p className="regular-14 w-full text-center text-gray-30">2024 Mara Raha Art Store, Inc. All rights reserved.</p>
+      </div>
       </div>
     </footer>
   )

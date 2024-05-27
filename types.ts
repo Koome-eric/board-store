@@ -47,6 +47,7 @@ export interface Product {
     store: Store;
     billboardId: string;
     billboard: Billboard;
+    imageUrl: string;
     name: string;
     products: Product[];
     createdAt: string;

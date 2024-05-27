@@ -19,7 +19,7 @@ interface LayoutProps {
 
 const Layout = ({ handleClick, isSomeActive, data, turn, setTurn }: LayoutProps) => {
   return (
-    <section className="w-full max-w-none px-4 lg:px-20 -mt-16 mb-16">
+    <section className="w-full max-w-none px-4 lg:px-20 mb-10 mt-10">
       <div className="flex flex-col items-center w-full">
         <h2 className="text-3xl bold-32 my-8 lg:bold-32">Frequently Asked Questions</h2>
         <button
