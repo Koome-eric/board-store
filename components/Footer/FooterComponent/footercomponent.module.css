@@ -42,8 +42,9 @@
   }
 
   .title {
-    font-weight: 500;
+    font-weight: 700;
     color: #7d110f;
+    font-size: 22px;
   }
   .description {
     font-size: 16px;

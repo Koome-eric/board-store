@@ -10,20 +10,38 @@
   display: flex;
   flex-direction: column;  /* Stack the elements vertically */
   align-items: center;  /* Center the content horizontally */
+  margin-bottom: -25px;
 
   .h3 {
     font-weight: 400;
+
   }
 
 }
 
 .list {
   display: grid;
-  gap: 30px;
+  gap: 40px;
   padding: 0;
   grid-template-columns: repeat(3, 1fr);
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 768px) {
+  .titleWrapper h3 {
+    font-size: 32px; /* Smaller font size for screens smaller than 768px */
+  }
+}
+
+@media (max-width: 480px) {
+  .titleWrapper h3 {
+    font-size: 25px; /* Even smaller font size for screens smaller than 480px */
+  }
+}
+
+.titleWrapper h3 {
+  font-size: 30px;
 }

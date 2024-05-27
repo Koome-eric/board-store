@@ -41,7 +41,7 @@ const Promotion = () => {
   return (
     <section className={classes.promotion}>
       <div className={classes.textBox}>
-        <h3 className="font-bold text-3xl -mb-4">Deals of the Month</h3>
+        <h3 className="text-3xl md:text-2xl font-bold sm:text-xl -mb-4"><span className="text-custom-red">Deals</span> of the Month</h3>
         <p>
           Get ready for a art shopping experience like never before with our Deals of the Month! Every
           purchase comes with exclusive perks and offers, making this month a celebration of savvy
