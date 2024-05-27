@@ -152,18 +152,6 @@ textarea {
     @apply text-[16px] font-[700];
   }
 
-  .text-3xl {
-    font-size: 40px; /* Default 3xl font size */
-    
-  }
-  .md\:text-2xl {
-    font-size: 32px; /* 2xl font size for medium screens */
-
-  }
-  .sm\:text-xl {
-    font-size: 25px; /* xl font size for small screens */
-    
-  }
 
   /* Hero */
   .hero-map {

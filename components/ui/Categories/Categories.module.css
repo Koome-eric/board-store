@@ -1,3 +1,19 @@
+.titleWrapper h3 {
+  font-size: 30px;
+}
+
+
+@media (max-width: 768px) {
+  .titleWrapper h3 {
+    font-size: 28px; /* Smaller font size for screens smaller than 768px */
+  }
+}
+
+@media (max-width: 480px) {
+  .titleWrapper h3 {
+    font-size: 25px; /* Even smaller font size for screens smaller than 480px */
+  }
+}
 
 .container {
   display: flex;
@@ -12,10 +28,6 @@
   align-items: center;  /* Center the content horizontally */
   margin-bottom: -25px;
 
-  .h3 {
-    font-weight: 400;
-
-  }
 
 }
 
@@ -30,18 +42,3 @@
   }
 }
 
-@media (max-width: 768px) {
-  .titleWrapper h3 {
-    font-size: 32px; /* Smaller font size for screens smaller than 768px */
-  }
-}
-
-@media (max-width: 480px) {
-  .titleWrapper h3 {
-    font-size: 25px; /* Even smaller font size for screens smaller than 480px */
-  }
-}
-
-.titleWrapper h3 {
-  font-size: 30px;
-}
