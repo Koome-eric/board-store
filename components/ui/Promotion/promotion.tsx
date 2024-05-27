@@ -43,7 +43,7 @@ const Promotion = () => {
       <div className={classes.textBox}>
         <h3 className="font-bold text-3xl -mb-4">Deals of the Month</h3>
         <p>
-          Get ready for a shopping experience like never before with our Deals of the Month! Every
+          Get ready for a art shopping experience like never before with our Deals of the Month! Every
           purchase comes with exclusive perks and offers, making this month a celebration of savvy
           choices and amazing deals. Don&apos;t miss out! 🎁🛒
         </p>
