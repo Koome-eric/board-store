@@ -1,10 +1,7 @@
 "use client";
 
 import Link from "next/link";
-<<<<<<< HEAD
 import Image from 'next/image';
-=======
->>>>>>> bda2e65891d3d15f0c2389800f5a88f002c2ffd4
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
@@ -27,15 +24,9 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
   return (
     <nav className="mx-6 flex items-center md:space-x-6">
       <button className="md:hidden mb-4 focus:outline-none" onClick={() => setIsOpen(!isOpen)}>
-<<<<<<< HEAD
         <Image src="/menu-icon.svg" alt="Menu" width={25} height={25} />
       </button>
       <div className={`${isOpen ? 'flex' : 'hidden'} flex-col md:flex md:flex-row md:items-center md:space-x-6 w-full bg-white shadow-md rounded-lg p-4 absolute inset-x-0 top-full z-50`}>
-=======
-        <img src="/menu-icon.svg" alt="Menu" width={25} height={25} />
-      </button>
-      <div className={`${isOpen ? 'flex' : 'hidden'} flex-col md:flex md:flex-row md:items-center md:space-x-6 w-full bg-white shadow-md p-4 absolute inset-x-0 top-full z-50`}>
->>>>>>> bda2e65891d3d15f0c2389800f5a88f002c2ffd4
         {routes.map((route) => (
           <Link
             key={route.href}
