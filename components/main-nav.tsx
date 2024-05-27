@@ -26,7 +26,7 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
       <button className="md:hidden mb-4 focus:outline-none" onClick={() => setIsOpen(!isOpen)}>
         <Image src="/menu-icon.svg" alt="Menu" width={25} height={25} />
       </button>
-      <div className={`${isOpen ? 'flex' : 'hidden'} flex-col md:flex md:flex-row md:items-center md:space-x-6 w-full bg-white shadow-md rounded-lg p-4 absolute inset-x-0 top-full z-50`}>
+      <div className={`${isOpen ? 'flex' : 'hidden'} flex-col md:flex md:flex-row md:items-center md:space-x-6 w-full bg-white shadow-md p-4 absolute inset-x-0 top-full z-50`}>
         {routes.map((route) => (
           <Link
             key={route.href}
