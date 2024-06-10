@@ -46,12 +46,22 @@ export interface Product {
     storeId: string;
     store: Store;
     billboardId: string;
+    layoutId: string;
     billboard: Billboard;
     imageUrl: string;
     name: string;
     products: Product[];
     createdAt: string;
     updatedAt: string;
+  }
+
+  export interface Layout {
+    id: string;
+    storeId: string;
+    mainCategoryName: string;
+    imageUrl: string;
+    createdAt: Date;
+    updatedAt: Date;
   }
   
   export interface Size {
