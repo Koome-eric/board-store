@@ -56,6 +56,7 @@ export interface Product {
   }
 
   export interface Layout {
+    billboard: Billboard;
     id: string;
     storeId: string;
     mainCategoryName: string;
