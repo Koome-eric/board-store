@@ -30,7 +30,7 @@ const Billboard: React.FC<BillboardProps> = ({ data }) => {
       <style jsx>{`
         @media (max-width: 768px) {
           .bg-custom-red {
-            background-size: 90% !important; // Smaller size on smaller screens
+            background-size: 100% !important; // Smaller size on smaller screens
           }
         }
       `}</style>
