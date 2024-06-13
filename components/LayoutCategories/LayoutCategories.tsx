@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, Category } from '@/types';
-import CategoryCard from './../ui/Categories/CategoryCard/CategoryCard'; // Adjust the path as needed
+import CategoryCard from '@/components/ui/Categories/CategoryCard/CategoryCard'; // Adjust the path as needed
 import classes from './LayoutCategories.module.css';
 
 interface LayoutCategoriesProps {
@@ -13,18 +13,14 @@ const LayoutCategories: React.FC<LayoutCategoriesProps> = ({ layout, categories 
 
   return (
     <section className={classes.container}>
-      <div className={classes.titleWrapper}>
-        <h3 className="text-3xl font-bold text-center mt-4">
-          {layout.mainCategoryName}
-        </h3>
-      </div>
+      
       <div className={classes.list}>
         {filteredCategories.length > 0 ? (
           filteredCategories.map(category => (
             <CategoryCard key={category.id} category={category} />
           ))
         ) : (
-          <p>No categories found.</p>
+          <p className="text-center text-gray-600">No categories found.</p>
         )}
       </div>
     </section>

@@ -21,7 +21,7 @@ const Navbar = async () => {
             </div>
             <div className="flex justify-center flex-1 absolute left-1/2 transform -translate-x-1/2">
               <Link href="/">
-                <Image src='/logo.svg' alt='logo' width={200} height={160} />
+                <Image src='/logo.svg' alt='logo' width={130} height={90} />
               </Link>
             </div>
             <div className="flex items-center flex-1 justify-end">
