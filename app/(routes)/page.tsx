@@ -3,7 +3,7 @@ import getProducts from "@/actions/get-products";
 import getLayouts from "@/actions/get-layouts";
 
 import ProductList from "@/components/product-list";
-import Billboard from "@/components/ui/billboard";
+import Billboard from "@/components/ui/Billboard/billboard";
 import Container from "@/components/ui/container";
 import Promotion from "@/components/ui/Promotion/promotion";
 import FAQ from "@/components/ui/faq";
