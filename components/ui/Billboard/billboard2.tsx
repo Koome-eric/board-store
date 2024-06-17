@@ -1,35 +1,34 @@
-'use client';
+"use client";
 
-import { ReactNode } from 'react';
-import { Billboard as BillboardType } from "@/types";
+import React from 'react';
 
-interface BillboardProps {
-  children: ReactNode; // Allow any children to be passed
-  data: BillboardType;
+interface BillboardClientProps {
+  imageUrl: string;
+  label: string;
 }
 
-const Billboard: React.FC<BillboardProps> = ({ children, data }) => {
+const BillboardClient: React.FC<BillboardClientProps> = ({ imageUrl, label }) => {
   return (
     <div className="px-0 sm:px-0 lg:px-0 w-screen overflow-hidden">
       <div 
-        style={{ backgroundImage: `url(${data?.imageUrl})` }} 
+        style={{ backgroundImage: `url(${imageUrl})` }} 
         className="relative aspect-square md:aspect-[2.4/1] overflow-hidden bg-cover flex"
       >
         <div 
-          className="w-1/2 bg-custom-red bg-opacity-80 flex items-center justify-start pl-16 py-2 relative" 
+          className="w-1/2 flex items-center justify-start pl-16 py-2 relative bg-opacity-80 bg-custom-red" 
           style={{
-            backgroundImage: `url('background.svg')`,
+            backgroundImage: `url('/background.svg')`,
             backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center',
+            backgroundPosition: 'center left 10%', // Adjust this value to move the image to the left
             backgroundSize: '90%', // Default size
           }}
         >
           <div className="font-bold text-2xl sm:text-5xl lg:text-5xl text-white relative z-10">
-            {data.label}
+            {label}
           </div>
         </div>
         <div className="w-1/2 flex justify-center items-center">
-          {children}
+          {/* Additional content or empty space; adjust as needed */}
         </div>
       </div>
       <style jsx>{`
@@ -43,4 +42,4 @@ const Billboard: React.FC<BillboardProps> = ({ children, data }) => {
   );
 };
 
-export default Billboard;
+export default BillboardClient;
