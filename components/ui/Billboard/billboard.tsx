@@ -28,13 +28,13 @@ BOARDS AND FITTINGS</p>
           {/* Call to Action Buttons */}
           <div className="flex justify-center gap-6">
             <a
-              href="/shop"
+              href="/"
               className="px-6 py-3 bg-custom-red text-white rounded-md text-lg font-semibold hover:bg-red-600 transition duration-300"
             >
               Shop Now
             </a>
             <a
-              href="/explore"
+              href="/"
               className="px-6 py-3 border-2 border-white text-white rounded-md text-lg font-semibold hover:bg-white hover:text-black transition duration-300"
             >
               Explore Collection
