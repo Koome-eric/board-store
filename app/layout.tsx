@@ -10,8 +10,8 @@ import './globals.css'
 const font = Lato({ weight: ['400','700'], subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Mara Raha',
-  description: 'Art Store - The place for all your art purchases.',
+  title: 'KBM',
+  description: 'The place for all your board purchases.',
 }
 
 export default function RootLayout({
