@@ -15,9 +15,9 @@ const BillboardClient: React.FC<BillboardClientProps> = ({ imageUrl, label }) =>
         className="relative aspect-square md:aspect-[2.4/1] overflow-hidden bg-cover flex"
       >
         <div 
-          className="w-1/2 flex items-center justify-start pl-16 py-2 relative bg-opacity-80 bg-custom-red" 
+          className="w-1/2 flex items-center justify-start pl-16 py-2 relative bg-opacity-80 bg-green-90" 
           style={{
-            backgroundImage: `url('/background.svg')`,
+            
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center left 10%', // Adjust this value to move the image to the left
             backgroundSize: '90%', // Default size

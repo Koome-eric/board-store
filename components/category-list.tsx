@@ -4,24 +4,24 @@ import NoResults from "@/components/ui/no-results";
 
 interface ExhibitionListProps {
   title: string;
-  items: Category[]
+  items: Category[];
 }
 
-const CategoryList: React.FC<ExhibitionListProps> = ({
-  title,
-  items
-}) => {
+const CategoryList: React.FC<ExhibitionListProps> = ({ title, items }) => {
   return (
-    <div>
-      <h3 className="font-bold text-2xl text-left mb-4 mt-4">{title}</h3>
+    <div className="mt-10">
+      <h3 className="font-bold text-2xl text-center mb-4 mt-4">
+        Services of The <span className="text-custom-red">Highest Quality</span>
+      </h3>
+
       {items.length === 0 && <NoResults />}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
-      {items.map((item) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {items.map((item) => (
           <Exhibition key={item.id} data={item} />
         ))}
       </div>
     </div>
-   );
-}
- 
+  );
+};
+
 export default CategoryList;
