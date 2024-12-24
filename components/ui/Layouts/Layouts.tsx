@@ -8,7 +8,7 @@ const Layouts = ({ layouts }: { layouts: Layout[] }) => {
   return (
     <section className={classes.container}>
       <div className={classes.titleWrapper}>
-        <h3 className="text-3xl font-bold text-center mt-4">
+        <h3 className="text-xl font-bold mt-6">
           Shop by <span className="text-custom-red">Main Categories</span>
         </h3>
       </div>

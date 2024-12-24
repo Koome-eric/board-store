@@ -14,7 +14,7 @@ const ProductList: React.FC<ProductListProps> = ({
   return (
     <div>
       <div className={classes.titleWrapper}>
-      <h3 className="text-3xl md:text-2xl sm:text-xl font-bold mb-6 text-center mt-10">New <span className="text-custom-red">Collections</span></h3>
+      <h3 className="text-xl md:text-2xl sm:text-xl font-bold mb-6 mt-10">New <span className="text-custom-red">Collections</span></h3>
       </div>
       {items.length === 0 && <NoResults />}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">

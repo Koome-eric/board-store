@@ -97,7 +97,7 @@ export const NAV_LINKS = [
   export const FOOTER_CONTACT_INFO = {
     title: 'Contact Us',
     links: [
-      { label: 'Email', value: 'mararaha@gmail.com' },
+      { label: 'Email', value: 'boardkenya@gmail.com' },
     ],
   };
   

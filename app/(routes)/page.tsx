@@ -5,15 +5,16 @@ import getLayouts from "@/actions/get-layouts";
 import ProductList from "@/components/product-list";
 import Billboard from "@/components/ui/Billboard/billboard";
 import Container from "@/components/ui/container";
-import Promotion from "@/components/ui/Promotion/promotion";
+import Blog from "@/components/ui/blogs";
 import FAQ from "@/components/ui/faq";
+import Featurenavs from "@/components/ui/featurenavs";
 import Layouts from "@/components/ui/Layouts/Layouts"; // Import the Categories component
 
 export const revalidate = 0;
 
 const HomePage = async () => {
   const products = await getProducts({ isFeatured: true });
-  const billboard = await getBillboard("6628e29a8445096b097ca10a");
+  const billboard = await getBillboard("676a6cc65e7ce5728c255480");
   const layouts = await getLayouts();
 
   return (
@@ -30,9 +31,11 @@ const HomePage = async () => {
 
             <ProductList title="New Collections" items={products} />
 
-            <Promotion />
+            <Featurenavs />
   
             <FAQ />
+
+            <Blog />
           </div>
         </div>
       </Container>

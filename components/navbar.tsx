@@ -16,13 +16,14 @@ const Navbar = async () => {
       <Container>
         <div className="relative px-4 sm:px-6 lg:px-8 flex h-24 items-center justify-between">
           <div className="flex items-center justify-between w-full">
+            
             <div>
-              <MainNav layouts={layouts} categories={categories} />
+              <Link href="/">
+                <h1>Urban Furniture</h1>
+              </Link>
             </div>
             <div className="flex justify-center flex-1 absolute left-1/2 transform -translate-x-1/2">
-              <Link href="/">
-                <Image src='/logo.svg' alt='logo' width={130} height={90} />
-              </Link>
+              <MainNav layouts={layouts} categories={categories} />
             </div>
             <div className="flex items-center flex-1 justify-end">
               <NavbarActions />
